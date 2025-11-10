@@ -1,69 +1,51 @@
-# React + TypeScript + Vite
+# PROYECTO  "UpTask"
+*Portal de gestión de proyectos, tareas y equipos de trabajo.*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Sitio web - [UpTask.com](https://uptask-mern-front-aag.vercel.app/)*
 
-Currently, two official plugins are available:
+## Descrición:
+Proyecto del Curso de Udemy - "React y Typescript - La guia completa" - UpTask MERN web y UpTask MERN API usando React y TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto se compone de una aplicación web (frontend) y una API (backend) para la gestión de proyectos de trabajo, tareas y equipos simulando el funcionamiento de aplicaciones administrativas como Odoo o MS Project.
 
-## Expanding the ESLint configuration
+La aplicación dispone de las siguientes características:
+* Pantallas de inicio de sesión, registro y cambio de contraseña con código de verificación.
+* Servicio de envio de correos electrónicos para manejo de cuenta de usuario.
+* Pantallas para creación, consulta, edición y revisión de proyectos.
+* Pantallas para creación, consulta, edición y revisión de tareas relacionadas a proyectos.
+* Manejo de roles de usuario y permisos para edición de proyectos y tareas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Desarrollado por:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Alan Eduardo Aguilar Guerrero**  
+_UANL - Lic. Tecnología de Software (Desarrollador Junior)_
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Fecha de publicación:
+_Septiembre 2025_
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Tecnologías implementadas:
+| Aplicación web         |     API    | Servicios adicionales |
+| ---------------------- | ---------- | --------------------- |
+| React                  | Node       | Mongo Atlas           |
+| TypeScript             | Express    | Mailtrap              |
+| TailwindCSS            | TypeScript | Vercel                |
+| TanStack - React Query | Mongoose   | Render                |
+| React Router           | NodeMailer |                       |
+| ZOD                    | JWT        |                       |
+| React Toastify         |            |                       |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Instrucciones para clonación e instalación de proyecto API y Web local:
+1. Descargue la herramienta de gestion de repositorios "Git"de la siguiente URL "https://git-scm.com/downloads
+2. Para instalar el proyecto API desde una terminal (Simbolo del sistema) abra una terminal en su computadora y coloque la dirección del directorio donde desea instalar el proyecto y ejecute el comando `git clone https://github.com/Nekromorfo20/uptask_mern_back_aag.git`
+3. Entre a la carpeta _uptask_mern_back_aag_ con el comando `cd uptask_mern_back_aag` y ejecute el comando `npm install` para instalar todas las dependencias.
+4. Ejecuta el comando `npm run dev` para inicial el proyecto API.
+5. Para instalar el proyecto Web desde una terminal (Simbolo del sistema) abra una terminal en su computadora y coloque la dirección del directorio donde desea instalar el proyecto y ejecute el comando `git clone https://github.com/Nekromorfo20/uptask_mern_front_aag.git`
+6. Entre a la carpeta _uptask_mern_front_aag_ con el comando `cd uptask_mern_front_aag` y ejecute el comando `npm install` para instalar todas las dependencias.
+7. Ejecuta el comando `npm run dev` para inicial el proyecto Web.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+_Puede verificar que todo funciona correctamente ingresando a la URL http://localhost:5173/ donde estará desplegado el Proyecto web funcionando en conjunto con el proyecto API._
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Usuario de Prueba:
+|     Usuario     |   Contraseña   |
+| --------------- | -------------- |
+| alan1@email.com | admin123       |
